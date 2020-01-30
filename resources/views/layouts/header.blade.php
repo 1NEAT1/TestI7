@@ -5,11 +5,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="{{ url('/') }}">Подача заявки</a>
+            <li class="nav-item {{ request()->is('/') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ url('/') }}">Создание объекта с информацией о клиенте</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url('/dns') }}">Обновление DNS</a>
+            <li class="nav-item {{ request()->is('domain') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ url('/domain') }}">Создание объекта с информацией о домене</a>
             </li>
         </ul>
     </div>

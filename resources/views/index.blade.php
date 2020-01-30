@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>Подача заявки</title>
+        <title>Создание объекта с информацией о клиенте</title>
 
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     </head>
@@ -103,7 +103,7 @@
                 <label for="street">Улица</label>
                 <input type="text" class="form-control" id="street" name="street" placeholder="Введите улицу">
             </div>
-            <button type="submit" class="btn btn-primary">Подать заявку</button>
+            <button type="submit" class="btn btn-primary">Создать объект</button>
         </form>
     </div>
     <script src="{{ asset('js/app.js') }}"></script>

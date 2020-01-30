@@ -1,6 +1,7 @@
 <?php
 
 Route::get('/', 'IndexController@index');
-Route::post('/', 'IndexController@create');
-Route::get('/dns', 'IndexController@dns');
-Route::post('/dns', 'IndexController@update');
+Route::post('/', 'IndexController@createClient');
+Route::get('/domain', 'IndexController@domain');
+Route::post('/domain', 'IndexController@domainCreate');
+
